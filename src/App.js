@@ -1,24 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { notes } from './notes';
+import { tasks } from './tasks';
+import { Notes } from './components/Notes/Notes';
 
 function App() {
+  const tasksMap = tasks
+    .reduce((acc, task) => ({ ...acc, [task.id]: task }), {});
+  const notesWithTasks = notes.map(({ tasks: noteTasks, ...rest }) => {
+    return {
+      ...rest,
+      tasks: noteTasks.map(taskId => tasksMap[taskId]),
+    };
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Notes notes={notesWithTasks} />
     </div>
   );
 }
