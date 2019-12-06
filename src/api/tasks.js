@@ -1,38 +1,38 @@
 export const tasks = [
   {
     id: '1',
-    name: 'Milk'
+    name: 'Milk',
   },
   {
     id: '2',
-    name: 'Bread'
+    name: 'Bread',
   },
   {
     id: '3',
-    name: 'Eggs'
+    name: 'Eggs',
   },
   {
     id: '4',
-    name: 'Cheese'
+    name: 'Cheese',
   },
   {
     id: '5',
-    name: 'Sugar'
+    name: 'Sugar',
   },
   {
     id: '6',
-    name: 'Banana'
+    name: 'Banana',
   },
   {
     id: '7',
-    name: 'Beer'
+    name: 'Beer',
   },
   {
     id: '8',
-    name: 'Coffee'
+    name: 'Coffee',
   },
   {
     id: '9',
-    name: 'Cake'
+    name: 'Cake',
   },
 ];

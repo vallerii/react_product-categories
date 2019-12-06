@@ -1,22 +1,24 @@
 import React from 'react';
-import './App.css';
-import { notes } from './notes';
-import { tasks } from './tasks';
-import { Notes } from './components/Notes/Notes';
+import './App.scss';
+import Note from './components/Note';
+import { tasks } from './api/tasks';
+import { notes } from './api/notes';
+
+const preparedNotes = notes.map((note) => {
+  const getTaskById = taskId => tasks.find(task => task.id === taskId);
+
+  return {
+    ...note,
+    tasks: note.tasks.map(getTaskById),
+  };
+});
 
 function App() {
-  const tasksMap = tasks
-    .reduce((acc, task) => ({ ...acc, [task.id]: task }), {});
-  const notesWithTasks = notes.map(({ tasks: noteTasks, ...rest }) => {
-    return {
-      ...rest,
-      tasks: noteTasks.map(taskId => tasksMap[taskId]),
-    };
-  });
-
   return (
     <div className="container">
-      <Notes notes={notesWithTasks} />
+      {preparedNotes.map(note => (
+        <Note {...note} key={note.id} />
+      ))}
     </div>
   );
 }
