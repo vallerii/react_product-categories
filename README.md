@@ -1,5 +1,5 @@
-# React notes
-A demo application similar to [React static list of TODOs](https://github.com/mate-academy/react_static-list-of-todos)
+# React Orders
+A demo application similar to [React static list of Posts](https://github.com/mate-academy/react_static-list-of-posts)
 > Remove the code and reimplement it during the lesson
 
 ## Workflow

@@ -2,8 +2,9 @@ import React from 'react';
 
 import './App.scss';
 
-// import { tasks } from './api/tasks';
-// import { notes } from './api/notes';
+// import users from './api/users.json';
+// import products from './api/products.json';
+// import orders from './api/orders.json';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <div className="ui card">
         <div className="ui content">
           <div className="ui description">
-            <p>Sunday</p>
+            <p>Sunday - (Roma)</p>
             <ul className="ui list">
               <li>Banana</li>
               <li>Beer</li>
@@ -24,7 +25,7 @@ function App() {
       <div className="ui card">
         <div className="ui content">
           <div className="ui description">
-            <p>My day</p>
+            <p>My day - (Anna)</p>
             <b>No tasks</b>
           </div>
         </div>
@@ -33,7 +34,7 @@ function App() {
       <div className="ui card">
         <div className="ui content">
           <div className="ui description">
-            <p>Work</p>
+            <p>Work - (Roma)</p>
             <ul className="ui list">
               <li>Sugar</li>
               <li>Coffee</li>
@@ -45,7 +46,7 @@ function App() {
       <div className="ui card">
         <div className="ui content">
           <div className="ui description">
-            <p>Monday</p>
+            <p>Monday - (Anna)</p>
             <ul className="ui list">
               <li>Milk</li>
               <li>Bread</li>
@@ -58,7 +59,7 @@ function App() {
       <div className="ui card">
         <div className="ui content">
           <div className="ui description">
-            <p>Everyday</p>
+            <p>Everyday - (Max)</p>
             <ul className="ui list">
               <li>Cheese</li>
               <li>Sugar</li>
