@@ -1,5 +1,3 @@
-import React from 'react';
-
 import './App.scss';
 
 // import users from './api/users.json';
