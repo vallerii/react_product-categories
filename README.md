@@ -1,12 +1,17 @@
 # React Orders
-- Replace `<your_account>` with your Github username in the
-  [DEMO LINK](https://<your_account>.github.io/react_orders/)
-- Follow the [React task guideline](https://github.com/mate-academy/react_task-guideline#react-tasks-guideline)
+You are give an array of `categories`. Each `category` has an owner
+and `products`. Render categories with products and an owner using a
+given markup.
 
-## Task
-- Implement an application with 5 components `OrderList`, `Order`, `User`, `ProductList` and `Product`
-  displaying [orders.js](./src/api/orders.js), [users.js](./src/api/users.js) and [products.js](./src/api/products.js).
-- Each post in the `OrderList` is represented by a `Order` component. It should show:
-  - the `title` of the order and the 
-  - the `user` using `User` component
-  - all the products using `ProductList` component
+- create interfaces
+- pepare the `categories` (add an owner and products)
+- render the list in the App
+- Move iterfaces to separate files inside `./src/type/<name>.ts`
+- extract `CategoryList` inside the `App`
+- create `type Props`
+- move `CategoryList` to the `./src/components/CategoryList.tsx`
+- extract `CategoryInfo` inside the `CategoryList`
+- move `CategoryInfo` to the `./src/components/CategoryInfo.tsx`
+- extract `ProductList` inside the `CategoryInfo`
+- move `ProductList` to the `./src/components/ProductList.tsx`
+- No need to create more components
